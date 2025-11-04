@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INDEX PAGE </h1>
+
+    <hr>
+
+    <button id="x">SHOW INFO</button>
+
+    <script>
+        const x = document.querySelector('#x');
+         
+        let i=10;
+        //new 
+        x.addEventListener('click',()=>{
+           console.log(i--);
+        });
+        //old method of events
+    //     const func = () =>{
+    //   console.log(i++);
+    //     };
+
+    //     x.onclick=func;
+
+    </script>
+</body>
+</html>

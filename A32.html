@@ -6,14 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>INDEX PAGE
-    </h1>
+    <h1> Index Page </h1>
+    <hr>
 
-    <h1 id="x">helloo world....!!</h1>
-<script>
-    const x = document.querySelector('#x');
-    
-</script>
-
+    <h1 class = 'a'>Chapter 1</h1>
+    <h1 class = 'a'>Chapter 2</h1>
+    <h1 class = 'a'>Chapter 3</h1>
+    <h1 class = 'a'>Chapter 4</h1>
+    <h1 class = 'a'>Chapter 5</h1>
+    <script>
+        const x = document.getElementsByClassName('a');
+        //esa kab karte ha?
+        //jab bhut saare match records milna expected hai css style ka selector select karna hai 
+        const y = document.querySelectorAll('.a');
+        console.log(x);
+        console.log(y);
+    </script>
 </body>
 </html>

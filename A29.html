@@ -16,11 +16,14 @@
     <h1 class = 'a'>Chapter 5</h1>
 
     <script>
-        //const x = document.getElementsByClassName('a');
-        //esa kab karte ha?
-        //jab bhut saare match records milna expected hai css style ka selector select karna hai 
-        const x = document.querySelectorAll('.a');
-        console.log(x);
+        const x = document.getElementsByClassName('a');
+        //in javascript there are 4 ways to create for loop-
+        //1)classic for loop   2)for of   3)for in    4)for each
+        for(i=0;i<x.length;i++){
+            console.log(x[i]);
+
+        }
     </script>
+
 </body>
 </html>

@@ -6,17 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>INDEX PAGE</h1>
-
+    <h1>INDEX PAGE </h1>
     <hr>
-
-    <h1 id="x">helloo world....!!</h1>
-
     <script>
-     //isme jaise css ka element select karte hai vaise hi karte hai
-    const x = document.querySelector('#x');
-    console.log(x);
-    
+        const x=[42,23,78,19,8];
+       const y= x.filter((next)=>{
+            return next%2==0;
+            //return next>30;
+
+        });
+        console.log(x);
+        console.log(y);
     </script>
+    
 </body>
 </html>
