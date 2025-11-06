@@ -9,16 +9,19 @@
     <h1>INDEX PAGE</h1>
 
     <hr>
-    <button type="button" id="btn">SHOW RECORDS</button>
+
+    <button type="button" id="btn"></button>
+    
     <hr>
 
     <table align="center" width="50%" border="1"></table>
 
     <script>
         const obj={name:'Khushi',age:21,college:'Global',branch:'CSE'};
-        //dono tariko se object ke elements ko access kar sakte hai
-        console.log(obj.name);
-        console.log(obj['name']);
+
+       for(let prop in obj){
+        console.log(prop, typeof prop)
+       }
 
 
     </script>

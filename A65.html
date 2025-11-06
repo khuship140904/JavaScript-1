@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INDEX PAGE</h1>
+
+    <hr>
+
+    <script>
+        class student{
+            constructor(name,age,college){
+                this.name=name;
+                this.age=age;
+                this.college=college;
+            }
+
+            showInfo(){
+                console.log(this.name,this.age,this.college);
+            }
+        }
+
+        const a= new student('dholu',7,'dholakpur');
+        const b= new student('jaggu',8,'balampur');
+
+        a.showInfo();
+        b.showInfo();
+
+    </script>
+</body>
+</html>

@@ -33,15 +33,6 @@
             for(let student of records){
                 let row = tbl.insertRow(i++);
 
-                cell.addEventListener('mouseover',(ev)=>{
-                        ev.target.style.backgroundColor = 'rgb(187 , 229 , 171)';
-                     
-                    });
-                    cell.addEventListener('mouseout',(ev)=>{
-                        ev.target.style.backgroundColor = 'white';
-                       
-                    });
-
                 let j=0;
                 for(let prop in student ){
                     let cell = row.insertCell(j++);
@@ -51,11 +42,6 @@
                     cell.addEventListener('mouseover',(event)=>{
                         event.target.style.backgroundColor = 'blue';
                         event.target.style.color = 'yellow';
-                     
-                    });
-                    cell.addEventListener('mouseout',(event)=>{
-                        event.target.style.backgroundColor = 'white';
-                        event.target.style.color = 'black';
                      
                     });
                 }
