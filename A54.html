@@ -6,24 +6,37 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1" align="center" width=""></table>
+    <h1>INDEX PAGE</h1>
+
+    <hr>
+
+    <button type="button" id="btn">Process</button>
+
+    <hr>
+
+    <table id="tbl" border="1" align="center" width="5%">
+
+    </table>
+
     <script>
+
         const arr=[34,8,56,24,9,11,89];
-        const btn= document.querySelector('#btn');
-        const sel= document.querySelector('#sel');
-        const tbl= document.querySelector('#tbl');
+        const btn = document.querySelector('#btn');
+        const tbl = document.querySelector('#tbl');
 
-        btn.addEventListener('click' , ()=>{
-             arr.forEach((next)=>{
-                let row=document.createElement('tr');
-                tbl.append(row);
+        btn.addEventListener('click',()=>{
+            arr.forEach((next)=>{
+            let row = document.createElement('tr');
 
-                let cell=document.createElement('td');
-                row.append(cell);
+            tbl.append(row);
 
-                cell.innerText=next;});
-        })
+            let cell = document.createElement('td');
 
+            row.append(cell);
+
+            cell.innerText = next;
+            });
+        });
     </script>
 </body>
 </html>
