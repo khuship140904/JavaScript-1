@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INDEX PAGE</h1>
+
+    <hr>
+    <button type="button" id="btn">SHOW RECORDS</button>
+    <hr>
+
+    <table align="center" width="50%" border="1" id="tbl"></table>
+
+    <script>
+        
+        const btn = document.querySelector('#btn');
+        const tbl = document.querySelector('#tbl');
+
+        const records=[
+            {name:'Khushi',age:21,college:'Global',branch:'CSE'},
+            {name:'Kanan',age:20,college:'GGITS',branch:'AIML'},
+            {name:'Harshit',age:20,college:'ShriRam',branch:'DS'},
+            {name:'Mahi',age:19,college:'Jec',branch:'CS'},
+            {name:'Kartik',age:21,college:'iitdm',branch:'IOT'}
+        ];
+
+        btn.addEventListener('click',()=>{
+            
+            let i = 0;
+            for(let student of records){
+                let row = tbl.insertRow(i++);
+
+                cell.addEventListener('mouseover',(ev)=>{
+                        ev.target.style.backgroundColor = 'rgb(187 , 229 , 171)';
+                     
+                    });
+                    cell.addEventListener('mouseout',(ev)=>{
+                        ev.target.style.backgroundColor = 'white';
+                       
+                    });
+
+                let j=0;
+                for(let prop in student ){
+                    let cell = row.insertCell(j++);
+                    
+                    cell.innerText = student[prop];
+
+                    cell.addEventListener('mouseover',(event)=>{
+                        event.target.style.backgroundColor = 'blue';
+                        event.target.style.color = 'yellow';
+                     
+                    });
+                    cell.addEventListener('mouseout',(event)=>{
+                        event.target.style.backgroundColor = 'white';
+                        event.target.style.color = 'black';
+                     
+                    });
+                }
+            }
+        });
+
+
+
+    </script>
+    
+</body>
+</html>

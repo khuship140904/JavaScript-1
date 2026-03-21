@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b{
+            font-size: 22px;
+            font-weight: bold;
+            background-color: aquamarine;
+            color: crimson;
+            padding: 8px 14px;
+            border: 5 px groove black;
+            border-radius: 7px;
+            box-shadow: 5px 5px 5px yellowgreen;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>INDEX PAGE</h1>
+    <hr>
+    <button type="button" id="a">SHOW INFO</button>
+    <script>
+        const a = document.getElementById('a');
+
+        setTimeout(()=>{
+            a.className = 'b';
+         },3000);
+    </script>
+</body>
+</html>

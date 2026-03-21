@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INDEX PAGE</h1>
+
+    <hr>
+    <button type="button" id="btn">SHOW RECORDS</button>
+    <hr>
+
+    <table align="center" width="50%" border="1"></table>
+
+    <script>
+        const records=[
+            {name:'Khushi',age:21,college:'Global',branch:'CSE'},
+            {name:'Kanan',age:20,college:'GGITS',branch:'AIML'},
+            {name:'Harshit',age:20,college:'ShriRam',branch:'DS'},
+            {name:'Mahi',age:19,college:'Jec',branch:'CS'},
+            {name:'Kartik',age:21,college:'iitdm',branch:'IOT'}
+        ];
+
+        for(let student of records){
+            for(let prop in student ){
+                console.log(prop, student[prop]);
+            }
+            console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>INDEX PAGE</h1>
+    <hr>
+    <button id="btn">SHOW</button>
+    <hr>
+    <select>
+        <option>SELECT</option>
+        <optgroup id="sel"></optgroup>
+
+    </select>
+
+    <script>
+         const arr=[1,2,3,4,5,6,7,8,9,10];
+
+         const btn= document.querySelector('#btn');
+         const sel= document.querySelector('#sel');
+
+         btn.addEventListener('click',()=>{
+            sel.innerHTML=' ';
+
+            arr.forEach((next) => {
+
+                const opt=document.createElement('option');
+
+                opt.innerText=next;
+
+                sel.append(opt);
+                
+            });
+
+         });
+    </script>
+</body>
+</html>
