@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>conditional statement</h1>
+
+    <script>
+        let gender = "male";
+        let age = 44;
+
+
+        let x = gender=="female"?
+                        age<60 ?
+                        "maintain min 2000 bal and get 8% interest":
+                         age<=22 ?
+                        "no min bal and get 4% interest":
+                        "no min bal and get 12% interest"
+
+               :gender=="male"
+                        ?
+                        age>60 ?
+                        "maintain min 2000 bal and get 11% interest":
+                         age<=22 ?
+                        "maintain min 500 bal and get 2% interest":
+                        "maintain min 5000 and get 6% interest";
+
+    console.log(x);
+
+
+
+    //age>0 || age=<100
+            
+    </script>
+    
+</body>
+</html>
