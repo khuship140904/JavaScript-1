@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <hr>
+
+    <script>
+        let age = parseInt(prompt('Enter Age: '))
+        let gender = prompt('Enter Gender(m/f): ')
+        
+        if(gender == 'm') {
+            if(age <= 22) {
+                console.log('MB: 500 IR: 2%');
+            } else if(age > 60) {
+                console.log('MB: 2000 IR: 11%');
+            } else {
+                console.log('MB: 5000 IR: 6%');
+            }                  
+        } else {
+            if(age <= 22) {
+                console.log('MB: 0 IR: 4%');
+            } else if(age > 60) {
+                console.log('MB: 0 IR: 12%');
+            } else {
+                console.log('MB: 2000 IR: 8%');
+            }
+        }
+
+    </script>
+</body>
+</html>
