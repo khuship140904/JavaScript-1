@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = [34,55,12,37,9,10,11,3,22,59];
+
+        let oddcount=0;
+        let evencount=0;
+
+        for (next of x) {
+
+            if (next%2) {
+                oddcount++;
+            }
+            else{
+                evencount++;
+            }    
+        }
+
+        console.log(oddcount);
+        console.log(evencount);
+    </script>
+</body>
+</html>
