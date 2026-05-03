@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x =[10,20,30,40,50,30,70,80,30];
+
+        for(i=0;i<x.length;i++){
+            let y = x.indexOf(30,i);
+
+            if (y!=-1) {
+                console.log(y)
+                
+            }
+        }
+
+        
+        for(next of x){
+        let y = x.indexOf(30,next)
+
+        if (y!=-1) {
+                console.log(y)
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>
