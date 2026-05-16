@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+
+        }
+
+        .t{
+
+        }
+    </style>
+</head>
+<body>
+    <div id="x">
+        <button type="button" id="btn">Click here </button>
+    </div>
+
+    <script>
+        const btn = document.querySelector('#btn');
+        const x =  document.querySelector('#x');
+
+        btn.addEventListener('click',()=>{
+            const obj = document.createElement('div');
+            obj.className = 't';
+            x.append(obj);
+
+            let a = window.innerWidth/2 - obj.width/2
+            let b = window.innerWidth/2 - obj.width/2
+
+            obj.style.top = b + 'px';
+            obj.style.left = a + 'px';
+        });
+    </script>
+    
+</body>
+</html>
