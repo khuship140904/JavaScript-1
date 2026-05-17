@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 80%;
+            height: 300px;
+            border: 3px solid red;
+            margin: 100px auto;
+            padding: 50px;
+        }
+
+        span {
+            width: 200px;
+            height: 200px;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="y"> ---------</h1>
+    <div id="z">
+
+        helloooo worldd.........
+        <span>Lorem, ipsum dolor.</span>
+        <span>Lorem, ipsum dolor.</span>
+        <span>Lorem, ipsum dolor.</span>
+        <span>Lorem, ipsum dolor.</span>
+        <span>Lorem, ipsum dolor.</span>
+        
+    </div>
+
+    <script>
+        // const x = document.querySelectorAll('span');
+        const y = document.querySelector('#y');
+
+        // x.forEach((nextSpan)=>{
+        //     nextSpan.addEventListener('click' , (e)=>{
+        //         y.innerText  = e.target.innerText;
+        //     });
+        // });
+
+        const z = document.querySelector('#z');
+
+        z.addEventListener('click',(e)=>{
+            e.target.innerText;
+        });
+    </script>
+</body>
+</html>
