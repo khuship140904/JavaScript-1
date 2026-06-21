@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>fibonaciii series</h1>
+
+    <hr>
+
+    <button id="btn1">Old Fibo</button>
+    <button id="btn2">new Fibo</button>
+
+    <script>
+
+        let arr = [];
+
+        function fibo(n){
+            if(arr[n] != undefined){
+                return arr[n];
+            }
+
+            if (n<2) {
+                return 1;
+            }
+
+           let result =  fibo(n-1)+fibo(n-2);
+           arr[n]=result;
+           return result;
+        }
+
+
+        console.log(fibo(45));
+    </script>
+</body>
+</html>
