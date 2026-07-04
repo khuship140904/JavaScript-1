@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btn">Show Next</button>
+
+    <div id="root"></div>
+
+
+    <script>
+        const d = document.querySelector('#root');
+        const btn = document.querySelector('#btn');
+        const arr = [{name:'nobita',college:'GGCT', pic: 'nobita.png'},
+                     {name:'doremon',college:'jec', pic: 'doremon.png'},
+                     {name:'jiyan',college:'Global', pic: 'giyan.png'}
+                    ];
+
+    function* printData(arr) {
+    for (let obj of arr) {
+        yield obj;
+    }
+}
+                    btn.addEventListener('onclick',function* print(){
+                        const h1 = document.createElement('h1');
+                        for(let next of arr){
+                            h1.innerText=next;
+                            d.append(h1);
+                        }
+
+                    });  
+    </script>
+</body>
+</html>
+
+
+const gen = printData(arr);
+
+btn.addEventListener("click",function(){
+
+    const result = gen.next();
+
+    if(!result.done){
+
+        const data = result.value;
+
+        d.innerHTML = `
+            <img src="${data.pic}" width="200">
+            <h2>${data.name}</h2>
+            <h3>${data.college}</h3>
+        `;
+
+    }
+    else{
+
+        d.innerHTML="<h2>No More Data</h2>";
+        btn.disabled=true;
+
+    }
+
+});
